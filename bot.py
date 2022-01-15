@@ -5,7 +5,7 @@ import psycopg2
 import locale
 from datetime import datetime
 
-conn = psycopg2.connect(host="192.168.0.45", port=5432, database="nossosonho", user="postgres", password="postgres")
+conn = psycopg2.connect(host="localhost", port=5432, database="nossosonho", user="postgres", password="postgres")
 conn.autocommit = True
 cur = conn.cursor()
 locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
