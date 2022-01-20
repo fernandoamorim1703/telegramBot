@@ -161,6 +161,7 @@ def relacaoFernando(update, context):
             array_mensagem.append(str(mensagem))
 
         valorTotal = locale.currency(valorTotal, grouping=True, symbol=None)
+        array_mensagem.append("\n\nValor total\nR$ "+valorTotal)
         update.message.reply_text(''.join(array_mensagem))
 
 def relacaoBrenda(update, context):
@@ -185,6 +186,7 @@ def relacaoBrenda(update, context):
             array_mensagem.append(str(mensagem))
 
         valorTotal = locale.currency(valorTotal, grouping=True, symbol=None)
+        array_mensagem.append("\n\nValor total\nR$ "+valorTotal)
         update.message.reply_text(''.join(array_mensagem))
 
 
@@ -215,6 +217,7 @@ def relacaoMensal(update, context):
                     array_mensagem.append(str(mensagem))
 
         valorTotal = locale.currency(valorTotal, grouping=True, symbol=None)
+        array_mensagem.append("\n\nValor total\nR$ "+valorTotal)
         update.message.reply_text(''.join(array_mensagem))
 
 def retirarSonho(update, context):
@@ -248,7 +251,7 @@ def retirarSonho(update, context):
         update.message.reply_text(mensagem)
     else:
         value_receiv = locale.currency(value_receiv, grouping=True, symbol=None)
-        update.message.reply_text("Valor de R$"+value_receiv+" foi inserido para a retirada do sonho!")
+        update.message.reply_text("Valor de R$"+value_receiv+" foi retirado para realização sonho!")
 
 def relacaoRetirada(update,context):
     user = update.message.from_user.first_name
@@ -272,6 +275,7 @@ def relacaoRetirada(update,context):
             array_mensagem.append(str(mensagem))
 
         valorTotal = locale.currency(valorTotal, grouping=True, symbol=None)
+        array_mensagem.append("\n\nValor total\nR$ "+valorTotal)
         update.message.reply_text(''.join(array_mensagem))
 
     
