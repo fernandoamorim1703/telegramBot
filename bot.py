@@ -290,7 +290,7 @@ def help(update, context):
     update.message.reply_text("Lista de Comandos\n\n/guardarFernando\n/relacaoFernando\n/guardarBrenda\n/relacaoBrenda\n/valorTotal\n/relacaoMensal\n/guardarRendimento\n/retirarSonho\n/relacaoRetirada")
 
 def main():
-    updater = Updater("1733666055:AAGZJOHaQ6OcT8bWIF9i0_3Vk3dIqI8Z5Tk", use_context=True)
+    updater = Updater("TOKEN HERE", use_context=True)
 
     dispatcher = updater.dispatcher
 
